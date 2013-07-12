@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	overflow-x:hidden;
+}
+
+body{
+	font-family: 'Muli', sans-serif;
+	padding:0;
+	margin:0;
+	background-image: url(seamlesstexture2_1200.jpg);
+}
+
+/*main bar CSS code */
+
+#content{
+	width:100%;
+	height:100%;
+}
+
+#mainBar{
+	width:800px;
+	margin:auto auto;
+	bottom: 40px;
+	left:50%;
+	margin-left:-400px;
+}
+
+#navBar{
+	background-color:#000;
+	color:white;
+	font-size:1.5em;
+	border: 2px solid black;
+	border-top-left-radius: 25px;
+}
+
+
+nav li{
+	display:inline-block;
+	padding-left:30px;
+}
+
+.navCat{
+	cursor:pointer;
+}
+
+
+#nameBar{
+	background-color:#cf1;
+	padding:10px;
+	border-bottom-right-radius:25px;
+}
+
+.fullBar#navBar{
+	height:75px;
+}
+
+.fullBar#nameBar{
+	height:200px;
+}
+
+.smooshBar#nameBar{
+	border-bottom-right-radius: 0px;
+}
+
+.smooshBar#mainBar .smooshBar#navBar{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	border-radius:0px;
+	height:200px;
+	padding:0;
+}
+
+#nameBar h1{
+	padding-left:30px;
+	font-size:5em;
+	/*text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;*/
+	z-index:5;
+}
+
+#nameBar h2{
+	font-size:2.5em;
+	color:#000;
+	/*text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;*/
+/*	text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;*/
+}
+
+#nameBarPrimary{
+	position:relative;
+	top:-70px;
+}
+
+#nameBarInset{
+	position:relative;
+	top:-160px;
+	left: 200px;
+	z-index:1;
+}
+
+.fixedPos{
+	position:fixed;
+}
+
+.absolutePos{
+	position:absolute;
+}
